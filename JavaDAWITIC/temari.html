@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temari Java</title>
+    <link rel="shortcut icon" href="java.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: "Host Grotesk", sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            border: 1px solid #000;
+            width: 100%;
+        }
+
+        table th, table td {
+            border: 1px solid #000;
+            padding: 10px;
+        }
+        
+        table th {
+            background-color: #0044CC;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        
+        tr td:nth-child(1) {
+            background-color: #999;
+            width: 40%;
+            color: #fff;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <h1>Temario Java</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Tema</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Introducción Java</td>
+                <td>Java és un llenguatge de programació d'alt nivell i orientat a objectes, desenvolupat per Sun Microsystems (ara propietat d'Oracle). Va ser creat el 1995 amb l'objectiu de ser un llenguatge robust, segur, independent de la plataforma i fàcil d'aprendre. Java ha esdevingut una de les tecnologies més utilitzades a nivell mundial en el desenvolupament de programari per a aplicacions d'escriptori, web, mòbils i sistemes integrats.</td>
+            </tr>
+            <tr>
+                <td>Declaració i assignació</td>
+                <td>La declaració d'una variable és el procés de crear-la i definir quin tipus de dada emmagatzemarà. En Java, cal especificar el tipus de dada abans del nom de la variable.
+                La assignació és el procés de donar un valor a una variable. En Java, fem servir el signe = per assignar el valor.
+                </td>
+            </tr>
+            <tr>
+                <td>Entrada y sortida</td>
+                <td>A Java, l'entrada i la sortida (E/S) permeten comunicar-nos amb l'usuari o amb altres fonts d'informació per llegir i mostrar dades.
+                La sortida (o output) en Java sol fer-se amb la classe System i, en particular, amb els mètodes System.out.print() i System.out.println().
+                Per llegir dades d'entrada des del teclat, es fa servir la classe Scanner del paquet java.util. Primer s'ha d'importar aquesta classe i crear un objecte Scanner associat a System.in, que és l'entrada estàndard del sistema.</td>
+            </tr>
+            <tr>
+                <td>Variables y tipus de dades</td>
+                <td>En Java, les variables són elements que emmagatzemen dades de diferents tipus. Per a cada variable, cal definir el tipus de dada, que especifica el format i l'espai que ocuparà en memòria.
+                Per declarar una variable en Java, primer cal indicar el tipus de dada, seguit del nom de la variable. Podem inicialitzar-la (assignar-li un valor) al mateix moment.
+                Els tipus de dades primitius en Java són tipus bàsics que emmagatzemen valors senzills i estan optimitzats per a la rapidesa. 
+                Els tipus de dades no primitius són més complexos i inclouen referències a objectes. 
+                És possible convertir entre tipus de dades. Aquesta conversió pot ser:
+                ·Implícita: Java converteix automàticament un tipus més petit a un tipus més gran.
+                ·Explícita (o cast): l'escriptor ha d'indicar la conversió entre tipus incompatibles o de major precisió o menor precisió.
+                En java, quan es declara una variable sense inicialitzar-la, els tipus primitius tenen un valor per defecte (per exemple, 0 per int, false per boolean, i null per String).</td>
+            </tr>
+            <tr>
+                <td>Tipus de operadors i expressions</td>
+                <td>Java ofereix diferents tipus d'operadors per treballar amb variables i valors. Els principals tipus son:
+                Els operadors aritmètics s'utilitzen per realitzar càlculs matemàtics bàsics.
+                Els operadors d'assignació s'utilitzenn per assignar valors a les variables. L'operador = és  el més bàsic, però també hi ha combinacions amb operadors aritmètics per simplificar el codi.
+                Els operadors de comparació s'utilitzen per comparar valors. Retornen un valor booleà (true o false).
+                Els operadors lògics s'utilitzen per combinar expressions booleanes i generar resultats complexos.
+                Operadors unaris actuen sobre una sola variable.
+                Els operadors de bits s'utilitzen per manipular el bits del números. Són menys comuns però útils en aplicacions de baix nivell.</td>
+            </tr>
+            <tr>
+                <td>Condicionals</td>
+                <td>Els condicionals en Java permeten que el programa prengui decisions en funció de certes condicions. Això ens permet controlar el flux d'execució segons els valor de les variables o els resultats de les expressions.
+                L'estructura if executa un bloc de codi només si una condició és true. Si la condició és false, el codi dins del blocs no s'executa.
+                L'estructura if-else permet afegir una alternativa si la condició no es compleix. Si la condició és true, s'executa el primer bloc de codi. Si és false, s'executa el bloc else.
+                L'estructura if-else if-else permet avaluar múltiples condicions en seqüencia. Quan es troba una condició true, el bloc associat s'executa, i la resta de condicions s'ignoren. Si cap condició és true, s'executa el bloc else.
+                L'estructura switch s'utilitza quan tenim múltiples valors possibles per a una variable i volem executar diferents blocs de codi segons cada valor. És especialment útil per simplificar el codi quan hi ha moltes opcions. L'operador ternari és una forma simplificada i abreujada d'escriure un if-else en una sola línia. En lloc d'escriure diverses línies de codi per a una condició simple, podem utilitzar l'operador ternari per decidir quin valor assignar o quina acció prendre en funció d'una condició.</td>
+            </tr>
+            <tr>
+                <td>Bucles</td>
+                <td>Els bucles en Java permeten repetir una sèrie d'intruccions múltiples vegades, en funció d'una condició o d'un nombre de repeticions. Són essencials per automatitzar tasques repetitives. Els principals bucles en Java són while, for, do-while,i també es poden imbricar (nuiar) bucles per a crear repeticions dins d'altres repeticions.
+                Hi ha diversos tipus de bucles en Java, però tots funcionen amb el mateix principi bàsic: mentre una condició es compleixi, el codi dins del bucle es repetirà. Quan la condició ja no és certa, el bucle es trenca i el programa continua amb la següent instrucció.
+                Els principals bucles en Java són:
+                El bucle while executa les instrucciones mentre la condició sigui true. Si la condició inicial és false, el bucle no s'executa cap vegada.
+                El bucle for s'utilitza quan sabem d'entrada quantes vegades volem que el bucle s'executi. És útil per iterar un nombre fix de vegades.
+                El bucle do-while és similar al while, però es garenteix que s'executarà almenys una vegada, perquè la condició es comprova al final del bucle.
+                Es pot col·locar un bucle while dins d'un altre bucle while per crear repeticions dins de repeticions. Això és útil per treballar amb estructures de dades bidimensionals, com ara matrius.
+                Un for niuat és un bucle for dins d'un altre bucle for. Com en el cas del while niuat, permet crear repeticions múltiples.</td>
+            </tr>
+            <tr>
+                <td>Recorreguts</td>
+                <td>Els recorreguts són una tècnica fonamental en programació que permet iterar sobre col·leccions de dades (com llistes, matrius o cadenes) o  intervals de valors. Es tracta d'un procès en què es visita cada element d'una seqüencia per aplicar-hi una operació específica, com calcular, modificar, filtrar o simplement mostrar el contingut. Un recorregut númeric és quan es processa un interval de valors utilitzant un bucle. Els bucles niuats són bucles dins d'altres bucles. S'utilitzen per treballar amb dades en múltiples dimesions. Recorreguts seqüencial: es visiten els elements d'una col·lecció de manera lineal, començant pel primer fins arribar a l'últim. És el recorregut més comú, utilitzat en arrays, llistes i cadenes. Recorreguts condicionals: es visiten els elements mentre es compleix una condició específica, sovint amb bucles while. Recorreguts amb salt: es poden saltar elements basant-se en condicions, sovint utilitzant continue. Recorreguts inversos: comencen des de l'últim element fins al primer, útil per treballar amb seqüencies en sentit contrari. Recorreguts niuats: es fan servir quan es treballa amb dades multidemensionalsm com matrius. Aquí, es combinen múltiples bucles, un dins d'un altre.</td>
+            </tr>
+            <tr>
+                <td>Strings</td>
+                <td>Un String és essencialment una seqüencia de lletres (o caràcters) que es representen com una cadena de text. És una clsse que permet gestionar i manipular aquesta seqüencia de caràcters de manera fàcil. Les cadenes de caràcteres es gestionen amb la classe String, que és una de les classes més importants i utilitzades del llenguatge. Les cadenes són objectes immutables, la qual cosa significa que, una vegada creades, no poden ser modificades. Quan parlem de "tipus de tipus" relacionats amb les cadenes, ens referim principalment a com es poden gestionar, comparar i manipular aquests objectes. Els recorreguts d'un String són una manera d'analitzar, modificar o utilitzar cada caràcter que el forma. En Java, un String és una seqüencia ordenada de caràcters, i per accedir a cadascun d'ells podem utilitzar diferents técniques.</td>
+            </tr>
+            <tr>
+                <td>Control de bucles</td>
+                <td>El control de bucles és un conjunt de mecanismes que permeten gestionar el comportament d'un bucle durant la seva execusió. Aquest control inclou la possibilitat de modificar la seqüencia d'interacions, interrompre l'execusió abans del previst, continuar amb la següent iteració o sortir del bucle completament. És essencial per escriure codi eficient, flexible i robust, especialment quan cal adaptar el recorregut a condicions dinàmiques o quan es busca optimitzar el temps d'execusió. L'instrucció break interromp l'execusió del bucle en qualsevol moment i força la sortida immediata del bucle. L'instrucció continue s'utilitza per saltar-se el codi restant en l'iteració actual i passar immediatament a la següent iteració. L'instrucció return finalitza no només el bucle, sinó també el mètode que l'està executant.</td>
+            </tr>
+            <tr>
+                <td>Conclusions</td>
+                <td>Els elements bàsics de programació en Java formen els pilars fonamentals per escriure programes efectius i comprendre el funcionament del llenguatge. Aquest conceptes introdueixen els principis generals de la programació i les especificitats de Java com a llenguatge orientat a objectes, robust i multiplaforma.</td>
+            </tr>
+            <tr>
+                <td>Mòduls</td>
+                <td>Els mòduls es van introduir a Java 9 com a part del Project Jigsaw. Serveixen per organitzar el codi de manera més estructurada, millorar la encapsulació i gestionar les dependències de forma més eficient en aplicacions grans. Els paràmetres són dades que es passen a una funció o mètode perquè aquest pugui treballar amb elles. Són una forma de transmetre informació al mètode en el moment de la seva invocació. </td>
+            </tr>
+            <tr>
+                <td>Funcions</td>
+                <td>Les funcions (o mètodes en Java) són blocs de codi que encapsulen una seqüencia d'instruccions dissenyades per realitzar una tasca específica dins d'un programa. Les funcions permeten reutilitzar codi, dividir un programa en parts més petites i comprensibles, i facilitar la seva mantenibilitat i extensibilitat. Cada funció té un nom únic que s'utilitza per cridar-la, un conjunt de paràmetres opcionals que li proporcionen dades d'entrada, i un tipus de retorn que indica el valor resultant (si n'hi ha). Les funcions poden ser invocades repetidament des de qualsevol part del programa, sempre que siguin accessibles, i poden operar amb dades passades com arguments o utilitzar variables de la seva pròpia classe.</td>
+            </tr>
+            <tr>
+                <td>Arrays</td>
+                <td>En Java, un array és una estructura que emmagatzema múltiples valors del mateix tipus en una seqüencia ordenada. Un array d'una dimensió és una llista lineal d'elements del mateix tipus. Un array de dues dimensions és una taula on cada posició conté un altre array.</td>
+            </tr>
+            <tr>
+                <td>Recursivitat</td>
+                <td>La recursivitat és un tècnica de programació on una funció es crida a si mateixa per resoldre un problema dividint-lo en subproblemes més petits. Una funcío recursiva és una funció que, dins del seu cos, es torna a cridar a si mateixa amb nous valors d'entrada.</td>
+            </tr>
+            <tr>
+                <td>Fitxers</td>
+                <td>Treballar amb fitxers en Java permet llegir, escriure, crear i modificar arxius del sistema (com .txt, .csv, etc.). Java proporciona classes dins del paquet java.io i java.nio per fer aquestes operacions.</td>
+            </tr>
+            <tr>
+                <td>Programació Orientada a Objectes</td>
+                <td>La Programació Orientada a Objectes és un paradigma de programació basat en el concepte d'objectes. Aquestes objectes representen entitats del món real i poden contenir:
+                    · Propietats (també anomenades atributs o camps variables) -> dades que descriuen l'objecte.
+                    · Comportaments (també anomenats mètodes) -> accions que l'objecte pot realitzar.
+                
+                L'objectiu és orginatzar el codi de manera modular, reutilitzable i extensible, imitant l'estructura del món real.</td>
+            </tr>
+            <tr>
+                <td>Biblioteques</td>
+                <td>Les biblioteques (o libraries) en Java són conjunts de classes i mètodes ja definits que podem reutilitzar per fer funcionalitats específiques sense haver de programar-les des de zero. Són eines que ens ajuden a estalviar temps i esforç en el desenvolupament de programari.</td>
+            </tr>
+            <tr>
+                <td>Validació d'aplicacions</td>
+                <td>Quan desenvolupem aplicacions, un dels objectius més importants és assegurar que el comportament del codi sigui correcte, previsible i fiable. Aquest procés s'anomena validació del programari i inclou molt més que validar inputs.
+                
+                Per validar una aplicació haurien de tenir en compta un conjunt de tècniques, estratègies i eines que verifiquen que una aplicació fa el que ha de fer, tant en el moment acual com a mesura que evoluciona (nous requeriments, canvis, manteniment...).</td>
+            </tr>
+            <tr>
+                <td>Persistència amb bases de dades</td>
+                <td>La persistència és la capacitat de desar dades perquè no es perdin quan l'aplicació es tanca.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

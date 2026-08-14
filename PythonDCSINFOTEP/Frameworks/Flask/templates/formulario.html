@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Usuario</title>
+</head>
+<body>
+    <h1>Introduce tu nombre</h1>
+    <!-- action="/procesar": el formulario enviará los datos a la ruta /procesar usando el método POST -->
+     <!-- method="POST": define que el formulario debe enviarse con el método POST -->
+    <form action="/procesar" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temario Python</title>
+    <link rel="shortcut icon" href="python.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: "Host Grotesk", sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            border: 1px solid #000;
+            width: 100%;
+        }
+
+        table th, table td {
+            border: 1px solid #000;
+            padding: 10px;
+        }
+        
+        table th {
+            background-color: #0044CC;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        
+        tr td:nth-child(1) {
+            background-color: #999;
+            width: 40%;
+            color: #fff;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <h1>Temario Python</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Tema</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Introducción Python</td>
+                <td>Python es un lenguaje de programación de alto nivel y proposito general, diseñado para ser fácil de leer, escribir y mantener. Es ampliamente utilizado en diversas áreas, como desarrollo web, análisis de datos, inteligencia artificial, automatización de tareas y muchos más.</td>
+            </tr>
+            <tr>
+                <td>Variables y tipos de datos</td>
+                <td>Una variable es un nombre que se usa para referirse a un valor o dato en el programa. Es como una "caja" donde puedes almacenar información para usarla más tarde. En python, no necesitas declarar el tipo de la variable antes de asignarle un valor, lo que hace que Python sea muy flexible y fácil de usar. En python, asignar un valor a una variable es muy simple. Usamos el operador de asignación "=". Los tipos de datos son las categorías de valores que puedes usar y manipular. Estos tipos permiten almacenar diferentes formas de información, como numero, texto o valores booleanos.</td>
+            </tr>
+            <tr>
+                <td>Entrada y Salida de datos</td>
+                <td>Entrada de datos (input()): La función input() permite al usuario ingresar información. Estos datos se devuelven como cadena de texto (str). Salida de datos (print()): La función print() permite mostrar datos o mensajes en la pantalla. Es una de las formas más comunes de interactuar con el usuario.</td>
+            </tr>
+            <tr>
+                <td>Operadores</td>
+                <td>En python, los operadores són símbolos o palabreas especiales que se utilizan para realizar operaciones en uno o más valores. Estos valores se llaman operandos. Operadores aritméticos se usan para realizar cálculos matemáticos básicos. Operadores relacionales se utilizan para establecer una relación entre 2 valores. Comparando estos valores entre sí y esta comparación produce un resultado de certeza o falsedad (True o False). Tienen el mismo nivel de prioridad en su evaluación y tienen menor prioridad que los aritméticos. Operaores logicos permiten construir expresiones logicas y se obtiene como resultado, booleanos. Operadores de asignación asignan valores a las variables. Operadores de pertenencia verifican si un elemento está en una colección (listas, cadenas, etc.).</td>
+            </tr>
+            <tr>
+                <td>Condicionales</td>
+                <td>Las condicionales son estructura que permiten ejecutar diferentes bloques de código dependiendo de si una condición se cumple (True) o no (False). Esto es fundamental para que un programa pueda tomar decisiones. Las condicionales anidadas son bloques if, elif, o else que se encuentran dentro de otro bloque de condicional. Se utilizan cuando necesitas realizar decisiones más complejas, evaluando múltiples condiciones en jerarquías. El operador ternario es una herramienta que es utilizada por muchos lenguajes de programación, es igual a if...else..., o sea, tiene una condición a evaluar, el código a ejecutar si se cumple la condición y el código a ejecutar si no se cumple dicha condición.</td>
+            </tr>
+            <tr>
+                <td>Listas</td>
+                <td>Las listas son estructuras de datos que nos permiten almacenar una gran cantidad de valores identificados por índices (equivalentes a los arrays en otros lenguajes de programación).</td>
+            </tr>
+            <tr>
+                <td>Tuplas</td>
+                <td>Las tuplas son listas inmutables, es decir, no se pueden modificar después de su creación.</td>
+            </tr>
+            <tr>
+                <td>Pilas</td>
+                <td>En Python, las pilas (stacks) no existen como una estructura de datos predefinida, pero se pueden simular utilizando listas y los métodos .append() y .pop() para gestionar la entrada y salida de datos. Las pilas siguen el principio de LIFO (Last In, First Out), que significa: Último en entrar, primero en salir.</td>
+            </tr>
+            <tr>
+                <td>Colas</td>
+                <td>En Python, las colas (queues) no existen como una estructura de datos predefinida, pero se pueden simular utilizando listas y los métodos .append() y .pop(0) para gestionar la entrada y salida de datos. Las colas siguen el principio de FIFO (First In, First Out), que significa: Primero en entrar, primero en salir.</td>
+            </tr>
+            <tr>
+                <td>Diccionarios</td>
+                <td>Los diccionarios se colocan dentro de llaves {}, son colecciones desordenadas y contienen dos elementos por posición: clave y valor. Además, no pueden existir claves duplicadas y aceptan tipos de datos diferentes para las claves y los valores.</td>
+            </tr>
+            <tr>
+                <td>Conjuntos</td>
+                <td>Los conjuntos o sets son colecciones donde los elementos se agregan de forma desordenada y no pueden existir elementos duplicados. Se utilizan llaves {}. Dentro de los conjuntos no se pueden agregar otras colecciones mutables, como listas o diccionarios.</td>
+            </tr>
+            <tr>
+                <td>Bucles</td>
+                <td>Un bucle es una estructura de control que permite ejecutar repetidamente un bloque de código mientras se cumpla una condición o se recorran los elementos de una secuencia. El bucle o ciclo for se utiliza cuando conocemos la cantidad de iteraciones que se desea realizar (recorrer los elementos de una secuencia uno por uno). El bucle o ciclo while: se utiliza cuando no conocemos la cantidad de iteraciones que se va a ejecutar el bloque de código, sino que se repite mientras se cumpla una condición específica. El contro de flujo en bucles en Python se refiere a las herramientas y técnicas que nos permiten alterar o modificar el comportamiento predeterminado de un bucle. Esto incluye detener el bucle, omitir una iteración o ejecutar un bloque adicional al final del bucle.</td>
+            </tr>
+            <tr>
+                <td>Funciones</td>
+                <td>Las funciones son un conjunto de líneas de código agrupadas (bloque de código) que funcionan como una unidad, realizando una tarea específica.</td>
+            </tr>
+            <tr>
+                <td>Ambito de las variables</td>
+                <td>El ámbito (o scope) de una variable se refiere a la parte del programa donde esa variable es accesible. En Python, el ámbito de las variables depende de dónde se declara y utiliza la variable.</td>
+            </tr>
+            <tr>
+                <td>Excepciones</td>
+                <td>Las excepciones son errores que ocurren durante la ejecución de un programa. Estos errores surgen a pesar de que la sintaxis sea correcta.</td>
+            </tr>
+            <tr>
+                <td>Funcion lambda</td>
+                <td>La función lambda en Python es una forma de crear funciones pequeñas y anónimas en una sola línea. A menudo se utiliza cuando se necesita una función para una tarea específica y no es necesario definirla con un nombre.</td>
+            </tr>
+            <tr>
+                <td>Args (kwargs)</td>
+                <td>*args (Argumentos Posicionales variables): *args permite pasar un número variable de argumentos posicionales a una función. *Args: permite utilizar argumentos de manera indefinida. El asterisco indica que tendrá una cantidad indeterminada de argumentos. Dentro de la función, args se comporta como una tupla que contiene todos los argumentos adicionales que se pasen. **kwargs (Argumentos con Palabra Clave Varibales): **kwargs permite pasar un número variable de argumentos con palabra clave (pares clave-valor). Dentro de la función, kwargs se comporta como un diccionario donde las claves son los nombres de los argumentos y los valores pasados a esos argumentos.</td>
+            </tr>
+            <tr>
+                <td>Funcion map</td>
+                <td>La función map() es una función de orden superior que aplica una función a cada elemento de un iterable (como una lista, tupla, etc.) y devuelve un iterable (un map object) con los resultados. Esta función es útil cuando necesitas realizar una operación a todos los elementos de una colección sin usar un bucle explícito.</td>
+            </tr>
+            <tr>
+                <td>Funcion filter</td>
+                <td>La función filter() en Python se utiliza para filtrar elementos de una secuencia (como una lista, tupla o conjunto) según una condición que se define en una función. La función devuelve un iterador que contiene solo los elementos que cumplen con la condición especificada.</td>
+            </tr>
+            <tr>
+                <td>Funcion zip</td>
+                <td>La función zip() se utiliza para combinar dos o más iterables (como listas, tuplas o cadenas) en un único iterable, donde cada elemento del iterable resultante es una tupla que contiene los elementos correspondientes de los iterables originales. Es útil cuando necesitas combinar datos relacionados, como nombres y edades, en pares.</td>
+            </tr>
+            <tr>
+                <td>Introducción POO</td>
+                <td>La programación orientada a objetos (POO) es un paradigma de programación basado en "objetos", que son instancias de clases. Las clases definen los atributos (propiedades) y métodos (funciones) que los objetos pueden tener.</td>
+            </tr>
+            <tr>
+                <td>Encapsulamiento</td>
+                <td>El encapsulamiento es el concepto que implica ocultar los detalles internos de una clase y exponer solo lo necesario. En Python, esto se logra mediante el uso de modificadores de acceso, como: Atributos públicos: son accesibles desde cualquier parte del código. Atributos privados: son accesibles solo desde dentro de la clase. Atributo protegidos: generalmente se usan para indicar que el atributo no debe ser accesible desde fuera de la clase, pero no se impide totalmente el acceso.</td>
+            </tr>
+            <tr>
+                <td>Herencia</td>
+                <td>La herencia es uno de los principios más importantes de la Programación Orientada a Objetos (POO). Permite que una clase herede atributos y métodos de otra clase, lo que facilita la reutilización del codigó y la creación de jerarquías de clases.</td>
+            </tr>
+            <tr>
+                <td>Polimorfismo</td>
+                <td>El polimorfismo es otro pilar fundamental de la Programación Orientada a Objetos (POO) y se refiere a la capacidad de un objeto de tomar muchas formas. En términos simples, el polimorfismo permite que diferentes clases tengan métodos con el mismo nombre, pero cada uno de estos métodos puede comportarse de manera diferente según la clase que lo implemente.</td>
+            </tr>
+            <tr>
+                <td>Super</td>
+                <td>La función super() se utiliza para llamar a métodos de una clase base desde una clase derivada. Es especialmente útil en la herencia, donde una clase hija necesita llamar a un método de su clase base para extender o modificar su comportamiento sin sobrescribirlo completamente.</td>
+            </tr>
+            <tr>
+                <td>Metodos magicos</td>
+                <td>Los métodos mágicos son métodos especiales en Python que permiten que los objetos interactúen de manera más intuitiva con operadores y funciones del lenguaje. Estos métodos tienen un nombre que comienza y termina con dos guiones bajos (__), de ahí el termino "dunder" (de double underscore).</td>
+            </tr>
+            <tr>
+                <td>Sobrecarga de metodos</td>
+                <td>En algunos lenguajes de programación como Java o C++, la sobrecarga de métodos permite que dos o más métodos dentro de la misma clase tengan el mismo nombre, pero diferentes parámetros. Sin embargo, en Python, la sobrecarga de métodos no funciona de forma directa, ya que un método definido más recientemente con el mismo nombre sobrescribe al anterior.</td>
+            </tr>
+            <tr>
+                <td>DuckTyping</td>
+                <td>El duck Typing es un concepto en programación que se basa en la idea de que, en lugar de verificar el tipo exacto de un objeto, se verifica si tiene los métodos y los atributos esperados. La expresión "Si camina como un pato, nada como un pato y suena como un pato, entonces es un pato" resume la idea del Duck Typing.</td>
+            </tr>
+            <tr>
+                <td>Herencia multiple</td>
+                <td>La herencia múltiple ocurre cuando una clase hereda de más de una clase base. En Python, se permite heredar de múltiples clases, y esto se logra especificando varias clases base entre paréntesis al definir la clase derivada.</td>
+            </tr>
+            <tr>
+                <td>Encapsulamiento de metodos</td>
+                <td>El encapsulamiento de métodos es un principio fundamental de la programación orientada a objetos (POO), que se refiere a la ocultación de los detalles internos de un objeto y la exposición solo de aquellos elementos necesarios para interactuar con él. En Python, esto se logra usando modificadores de acceso como privado, protegido y público.</td>
+            </tr>
+            <tr>
+                <td>Clases Abstractas</td>
+                <td>Las clases abstractas son fundamentales en POO porque permiten definir una estructura base para otras clases. No puedes instanciar una clase abstracta directamente, pero puedes heredar de ella para crear clases más concretas que implementen los métodos que la clase abstracta define.</td>
+            </tr>
+            <tr>
+                <td>Data class</td>
+                <td>Las dataclasses son una forma sencilla y eficiente de crear clases en Python que principalmente contienen datos. Introducidas en Python 3.7, las dataclasses proporcionan una forma rápida de definir clases sin tener que escribir mucho código repetitivo. Python genera automáticamente varios métodos mágicos para las clases, como __init__, __repr__, __eq__, __hash__, entre otros, para hacer que trabajar con ellas sea más conveniente.</td>
+            </tr>
+            <tr>
+                <td>Api</td>
+                <td>Una API (Application Programming Interface, por sus siglas en inglés) es un conjunto de definiciones y protocolos que permite que una aplicación se comunique con otra. En términos sencillos, una API es un intermediario entre diferentes programas, permitiendo que interactúen entre sí. A través de una API, se pueden enviar y recibir datos de manera estructurada sin necesidad de entender los detalles internos de cada aplicación.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
